@@ -7,70 +7,41 @@
 
 ## Table of Contents
 1. Executive Summary
-2. Solution Architecture Overview
-3. Business Case
-4. Requirements Summary
-5. High-Level Solution Design
-6. Detailed Solution Architecture
-7. Integration Architecture
-8. Data Architecture
-9. Security Architecture
-10. Infrastructure Requirements
-11. Non-Functional Requirements
-12. Transition and Implementation Strategy
-13. Risks and Mitigations
-14. Appendices
-15. Glossary
+2. Business Case
+3. Requirements Summary
+4. High-Level Solution Design
+5. Detailed Solution Architecture
+6. Security Architecture
+7. Infrastructure Requirements
+8. Non-Functional Requirements
 
 ## 1. Executive Summary
 - Briefly describe the purpose, scope, and objectives of the new system.
 
-## 2. Solution Architecture Overview
-- Present a high-level overview of the architecture and its components.
-
-## 3. Business Case
+## 2. Business Case
 - Outline the business problem or opportunity the project addresses.
 
-## 4. Requirements Summary
+## 3. Requirements Summary
 - Enumerate the business and technical requirements the solution must meet.
 
-## 5. High-Level Solution Design
+## 4. High-Level Solution Design
 - Provide a conceptual or logical view of the proposed solution.
 - Include simple diagrams or charts to illustrate the solution concept.
 
-  ![image](https://github.com/practicalvj/sadexercise/assets/122186968/7a4159ed-2e94-442b-ab03-bf637ddc8b12)
+![image](https://github.com/practicalvj/sadexercise/assets/122186968/7a4159ed-2e94-442b-ab03-bf637ddc8b12)
 
-
-## 6. Detailed Solution Architecture
+## 5. Detailed Component Architecture
 - Describe the architecture in detail, including information on system modules and components.
 - Include detailed architectural diagrams.
 
-## 7. Integration Architecture
-- Define how the solution will integrate with existing systems.
-- Describe any APIs, services, or data flows.
-
-## 8. Data Architecture
-- Detail the data model and database design.
-- Explain data migration, storage, and reporting strategies.
-
-## 9. Security Architecture
+## 6. Security Architecture
 - Outline security measures, compliance standards, and data protection mechanisms.
 
-## 10. Infrastructure Requirements
+## 7. Infrastructure Requirements
 - Specify the infrastructure needed, both hardware and software, including network and server architecture.
 
-## 11. Non-Functional Requirements
+## 8. Non-Functional Requirements
 - Describe the requirements for performance, scalability, reliability, and availability.
 
-## 12. Transition and Implementation Strategy
-- Detail the steps for transitioning from the current state to the new solution.
-- Include a timeline with key milestones.
-
-## 13. Risks and Mitigations
+## 9. Risks and Mitigations
 - Identify potential risks and propose mitigation strategies.
-
-## 14. Appendices
-- Include any additional supporting information.
-
-## 15. Glossary
-- Define terms and acronyms used in the document.
