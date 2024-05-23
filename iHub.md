@@ -38,6 +38,9 @@
 - Provide a conceptual or logical view of the proposed solution.
 - Include simple diagrams or charts to illustrate the solution concept.
 
+  ![image](https://github.com/practicalvj/sadexercise/assets/122186968/7a4159ed-2e94-442b-ab03-bf637ddc8b12)
+
+
 ## 6. Detailed Solution Architecture
 - Describe the architecture in detail, including information on system modules and components.
 - Include detailed architectural diagrams.
