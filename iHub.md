@@ -1,9 +1,9 @@
 ## Document Control
-- **Version:** 
-- **Authors:** 
-- **Date:** 
-- **Approval:** 
-- **Change History:**
+- **Version:** 1.0
+- **Authors:** Vijay Nair
+- **Date:** 05/22/2024
+- **Approval:** Chandra S
+- **Change History:** Initial Version of the WMS iHub Proposal
 
 ## Table of Contents
 1. Executive Summary
