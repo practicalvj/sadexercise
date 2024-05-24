@@ -137,6 +137,15 @@ The Studio Service consists of the following components.
     
 ![image](https://github.com/practicalvj/sadexercise/assets/122186968/ff92b43c-d934-403e-ae0c-5fcc7276062a)
 
+The Runtime Service consists of the following components.
+* API Endpoints
+  * Endpoints published to ERP consumers. Endpoints classified by business APIs provided by WMS
+* Route Handler
+  * Loads metadata configuration and passes through a chain of connectors, transformations and publishing.
+* Execution Persistent Store
+  * Relational store for execution data
+
+
 ![image](https://github.com/practicalvj/sadexercise/assets/122186968/c5748785-c8d5-4be8-8fbd-b8c11b5c32c9)
 
 
