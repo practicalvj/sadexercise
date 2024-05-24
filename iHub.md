@@ -11,9 +11,8 @@
 3. High-Level Solution Design
 4. Service Design
 5. Component Architecture
-6. Security Architecture
-7. Infrastructure Requirements
-8. Non-Functional Requirements
+6. Infrastructure Requirements
+7. Non-Functional Requirements
 
 ## 1. Executive Summary
 
@@ -148,11 +147,7 @@ The Runtime Service consists of the following components.
 
 ![image](https://github.com/practicalvj/sadexercise/assets/122186968/c5748785-c8d5-4be8-8fbd-b8c11b5c32c9)
 
-
-## 6. Security Architecture
-
-
-## 7. Infrastructure Requirements
+## 6. Infrastructure Requirements
 
 **SaaS Deployment**
 
@@ -166,7 +161,7 @@ The Runtime Service consists of the following components.
 | Metadata Cache | Redis Instance | 4 OCPU, 480 GB RAM | us-west-1 | us-east-1 | Separate instance per tenant |
 
 
-## 8. Non-Functional Requirements
+## 7. Non-Functional Requirements
 
 | Area    | Requirements | Response |
 | -------- | ------- | -------- |
