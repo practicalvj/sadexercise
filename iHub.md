@@ -16,10 +16,9 @@
 
 ## 1. Executive Summary
 
-The traditional model for customers wanting to integrate with our WMS offerings have been to adopt a self-managed approach. The customers are responsible for building out connectors, transform the payloads expected by our APIs and monitor/observe them utilizing custom build tools. As our services mature, there is a growing demand by the customer base to move these capabilities to a fully managed integration platform service provided out of the box by the WMS suite. 
+The traditional model for customers wanting to integrate with our WMS offerings have been to adopt a self-managed approach. The customers are responsible for building out connectors, transform the payloads expected by our APIs and monitor/observe them utilizing custom build tools. As our services mature, there is a growing demand by the customer base to move these capabilities to a fully managed integration platform service provided out of the box by the WMS suite. With this approach, customers would be able to reduce costs of building/operating their own tools, utilize a modern  platform to serve their integration needs and help us elevate the overall customer experience of our products.
 
-This solution architecture document
-
+This document presents the solution architecture for WMS iHub (Integration Hub), a proposed new capability within the WMS Suite that will cater to the business/technical requirements.
 
 ## 3. Requirements Summary
 - Enumerate the business and technical requirements the solution must meet.
