@@ -27,6 +27,7 @@ Business Requirements
 * Ability to monitor, observe and report via console.
 
 Technical Requirements
+* Support for Enterprise Integration Patterns (Channels / Protocols)
 * Multi-Tenant service
 * Configuration driven design
 * Catalogue loading/definition
@@ -38,7 +39,10 @@ Technical Requirements
 
 ## 4. High-Level Solution Design
 
-![image](https://github.com/practicalvj/sadexercise/assets/122186968/cbb1377c-97cc-4a2d-8b12-61b91a9c5bb4)
+The high level solution design for iHub is laid out below.
+
+![Vijay Nair's landscape - Context Diagram (Latest) (1)](https://github.com/practicalvj/sadexercise/assets/122186968/b14849f4-f783-4dfe-a5c4-cbd62fbd9b12)
+
 
 
 ## 5. Detailed Component Architecture
