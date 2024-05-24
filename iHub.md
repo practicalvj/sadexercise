@@ -154,6 +154,8 @@ The Runtime Service consists of the following components.
 
 ## 7. Infrastructure Requirements
 
+**SaaS Deployment**
+
 | Service  | Deployment Model | Resources | Primary Region | Backup Region | Tenancy Model |
 | -------- | ------- | -------- | --------- | ------- | -------- |
 | Studio Service | Microservice | 4 OCPU, 120 GB RAM | us-west-1 | us-east-1 | K8s shared namespace |
