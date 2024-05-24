@@ -116,6 +116,10 @@ A pictorial description of the service design is depicted below.
 
 ## 5. Component Architecture
 
+![image](https://github.com/practicalvj/sadexercise/assets/122186968/ff92b43c-d934-403e-ae0c-5fcc7276062a)
+
+![image](https://github.com/practicalvj/sadexercise/assets/122186968/c5748785-c8d5-4be8-8fbd-b8c11b5c32c9)
+
 
 ## 6. Security Architecture
 - Outline security measures, compliance standards, and data protection mechanisms.
