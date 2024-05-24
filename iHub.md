@@ -46,6 +46,9 @@ iHub will be a stand-alone application consisting of a set of services that will
 
 ![Vijay Nair's landscape - Context Diagram (Latest) (1)](https://github.com/practicalvj/sadexercise/assets/122186968/b14849f4-f783-4dfe-a5c4-cbd62fbd9b12)
 
+![image](https://github.com/practicalvj/sadexercise/assets/122186968/033301b1-222e-4ea7-8939-fd5d8d570bb5)
+
+
 
 
 ## 5. Component Architecture
@@ -58,7 +61,15 @@ iHub will be a stand-alone application consisting of a set of services that will
 - Specify the infrastructure needed, both hardware and software, including network and server architecture.
 
 ## 8. Non-Functional Requirements
-- Describe the requirements for performance, scalability, reliability, and availability.
+
+| Area    | Requirements | Response |
+| -------- | ------- | -------- |
+| Service Level Availability / Objectives  | Have service level availability targets been established, and does the solution support them?    |
+| Performance | Have Targets Been Established ?     |
+| Volumes    | Have volume processing targets been identified and guaranteed for throughput within target SLA?   |
+| Scalability | Is solution designed for scaling aimed at supporting the targeted use case?) |
+| Resiliency | In the event of an outage of dependent solution components, has service resiliency been built in to avoid revenue or customer facing impact? | 
+| Visibility & Control | Have operational measurements been established against which proper operations of the solution can be measured; are procedures in place for alerts and correction? |
 
 ## 9. Risks and Mitigations
 - Identify potential risks and propose mitigation strategies.
