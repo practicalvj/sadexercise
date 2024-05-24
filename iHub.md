@@ -24,10 +24,9 @@ This document presents the solution architecture for WMS iHub (Integration Hub),
 - Enumerate the business and technical requirements the solution must meet.
 
 ## 4. High-Level Solution Design
-- Provide a conceptual or logical view of the proposed solution.
-- Include simple diagrams or charts to illustrate the solution concept.
 
-![image](https://github.com/practicalvj/sadexercise/assets/122186968/7a4159ed-2e94-442b-ab03-bf637ddc8b12)
+![image](https://github.com/practicalvj/sadexercise/assets/122186968/cbb1377c-97cc-4a2d-8b12-61b91a9c5bb4)
+
 
 ## 5. Detailed Component Architecture
 - Describe the architecture in detail, including information on system modules and components.
