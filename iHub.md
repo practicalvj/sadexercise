@@ -154,6 +154,15 @@ The Runtime Service consists of the following components.
 
 ## 7. Infrastructure Requirements
 
+| Service  | Deployment Model | Resources | Primary Region | Backup Region | Tenancy Model |
+| -------- | ------- | -------- | --------- | ------- | -------- |
+| Studio Service | Microservice | 4 OCPU, 120 GB RAM | us-west-1 | us-east-1 | K8s shared namespace |
+| Runtime Service | Microservice | 4 OCPU, 120 GB RAM | us-west-1 | us-east-1 | K8s shared namespace |
+| Reporting Service | Microservice | 4 OCPU, 120 GB RAM | us-west-1 | us-east-1 | K8s shared namespace |
+| Studio Persistent Store | Database Schema | 4 OCPU, 120 GB RAM, 1 TB | us-west-1 | us-east-1 | Separate instance per tenant |
+| Execution Persistent Store | Database Schema | 4 OCPU, 120 GB RAM, 10 TB | us-west-1 | us-east-1 | Separate instance per tenant |
+| Metadata Cache | Redis Instance | 4 OCPU, 480 GB RAM | us-west-1 | us-east-1 | Separate instance per tenant |
+
 
 ## 8. Non-Functional Requirements
 
