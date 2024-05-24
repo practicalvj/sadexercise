@@ -150,7 +150,7 @@ The Runtime Service consists of the following components.
 
 
 ## 6. Security Architecture
-- Outline security measures, compliance standards, and data protection mechanisms.
+
 
 ## 7. Infrastructure Requirements
 
@@ -159,9 +159,8 @@ The Runtime Service consists of the following components.
 
 | Area    | Requirements | Response |
 | -------- | ------- | -------- |
-| Service Level Availability / Objectives  | Have service level availability targets been established, and does the solution support them?    |
-| Performance | Have Targets Been Established ?     |
-| Volumes    | Have volume processing targets been identified and guaranteed for throughput within target SLA?   |
-| Scalability | Is solution designed for scaling aimed at supporting the targeted use case?) |
-| Resiliency | In the event of an outage of dependent solution components, has service resiliency been built in to avoid revenue or customer facing impact? | 
-| Visibility & Control | Have operational measurements been established against which proper operations of the solution can be measured; are procedures in place for alerts and correction? |
+| Service Level Availability / Objectives  | Have service level availability targets been established, and does the solution support them?    | Yes. The service will cater to our standard SLAs of 99.9 and for response times less than 500ms|
+| Performance | Have Targets Been established ?| The System needs to support 1 MM transactions per hour across all our tenant with a response time SLA of less than 500 ms|
+| Scalability | Is solution designed for scaling aimed at supporting the targeted use case?) | Yes. The system will be able to scale horizontally based on the design constructs |
+| Resiliency | In the event of an outage of dependent solution components, has service resiliency been built in to avoid revenue or customer facing impact? | Yes. Appropriate redundancy is built into the solution at each layer|
+| Visibility & Control | Have operational measurements been established against which proper operations of the solution can be measured; are procedures in place for alerts and correction? | Yes. Solution will be able to integrate with our M&O infrastructure|
