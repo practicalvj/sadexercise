@@ -130,7 +130,11 @@ The Studio Service consists of the following components.
   * Includes Channel Definitions - Define inbound and outbound connectors/protocols
   * Includes Transformations - Define transformation routines between inbound messages coming in from ERP systems to our WMS instances. Transformation allows field mapping, field transformation and default values for WMS specifications
   * Includes Routes - Gateway for inbound payloads, transformers and outbound publishing
-*
+* Metadata Persistent Store
+  * Relational store for metadata configuration 
+* Metadata Cache
+  * Cache store for metadata configuration
+    
 ![image](https://github.com/practicalvj/sadexercise/assets/122186968/ff92b43c-d934-403e-ae0c-5fcc7276062a)
 
 ![image](https://github.com/practicalvj/sadexercise/assets/122186968/c5748785-c8d5-4be8-8fbd-b8c11b5c32c9)
