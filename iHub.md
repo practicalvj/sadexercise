@@ -119,6 +119,18 @@ A pictorial description of the service design is depicted below.
 **_iHub Studio Service_**
 
 The Studio Service consists of the following components.
+* Console SPA
+  * Single Page Application based on React Components
+  * Components include Cataloguing, Integration Definition, Testing, Versioning and Deployment
+  * Canvas for these components
+  * Delivered via a CDN
+* Metadata Core Entity
+  * Responsible for operations around the core metadata model based on Apache Camel Java DSL
+  * Includes Catalogue Loading - WMS Open API specifications and ERP APIs
+  * Includes Channel Definitions - Define inbound and outbound connectors/protocols
+  * Includes Transformations - Define transformation routines between inbound messages coming in from ERP systems to our WMS instances. Transformation allows field mapping, field transformation and default values for WMS specifications
+  * Includes Routes - Gateway for inbound payloads, transformers and outbound publishing
+*
 ![image](https://github.com/practicalvj/sadexercise/assets/122186968/ff92b43c-d934-403e-ae0c-5fcc7276062a)
 
 ![image](https://github.com/practicalvj/sadexercise/assets/122186968/c5748785-c8d5-4be8-8fbd-b8c11b5c32c9)
