@@ -133,6 +133,3 @@ A pictorial description of the service design is depicted below.
 | Scalability | Is solution designed for scaling aimed at supporting the targeted use case?) |
 | Resiliency | In the event of an outage of dependent solution components, has service resiliency been built in to avoid revenue or customer facing impact? | 
 | Visibility & Control | Have operational measurements been established against which proper operations of the solution can be measured; are procedures in place for alerts and correction? |
-
-## 10. Risks and Mitigations
-- Identify potential risks and propose mitigation strategies.
