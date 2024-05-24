@@ -21,7 +21,20 @@ The traditional model for customers wanting to integrate with our WMS offerings 
 This document presents the solution architecture for WMS iHub (Integration Hub), a proposed new capability within the WMS Suite that will cater to the business/technical requirements.
 
 ## 3. Requirements Summary
-- Enumerate the business and technical requirements the solution must meet.
+Business Requirements
+* Self-service tool accessible by customer's staff
+* UI console driven administration and configuration
+* Ability to monitor, observe and report via console.
+
+Technical Requirements
+* Multi-Tenant service
+* Configuration driven design
+* Catalogue loading/definition
+* Simple/Complex Data Type transformations
+* Resilient (Retries/Back Pressure/Stateless)
+* Horizontally scaleable
+* HTTP(s) Protocol support
+* Cost Efficient
 
 ## 4. High-Level Solution Design
 
@@ -29,8 +42,7 @@ This document presents the solution architecture for WMS iHub (Integration Hub),
 
 
 ## 5. Detailed Component Architecture
-- Describe the architecture in detail, including information on system modules and components.
-- Include detailed architectural diagrams.
+
 
 ## 6. Security Architecture
 - Outline security measures, compliance standards, and data protection mechanisms.
