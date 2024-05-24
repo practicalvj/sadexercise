@@ -41,8 +41,11 @@ Technical Requirements
 
 iHub will be a stand-alone application consisting of a set of services that will satisfy the business/technical requirements laid out above. 
 
-* It will have a browser based console exposed to the customer's administrators to help them setup integrations, deploy and monitor them.
-* From an inbound channel perspective, iHub will expose APIs that ERPs will consume to send their payloads
+* iHub can be deployed as a SaaS service but also can be deployed within a customer's DC if needed.
+* It will have a browser based console exposed to the customer's administrators to help them setup/deploy and monitor integrations. These integrations will be stored using a metadata based model to ensure maximum flexibility.
+* iHub will expose inbound APIs on which ERP systems can send their custom payloads. These payloads will be transformed to WMS formats based upon the configuration setup done
+* iHub will call WMS APIs with the transformed data, collect responses and send it back to the ERP system with appropriate status.
+* iHUb will log all execution activity to enable customers to monitor and act upon integration outcomes i.e. success/failures.
 
 ![Vijay Nair's landscape - Context Diagram (Latest) (1)](https://github.com/practicalvj/sadexercise/assets/122186968/b14849f4-f783-4dfe-a5c4-cbd62fbd9b12)
 
