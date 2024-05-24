@@ -9,10 +9,11 @@
 1. Executive Summary
 2. Requirements Summary
 3. High-Level Solution Design
-4. Detailed Solution Architecture
-5. Security Architecture
-6. Infrastructure Requirements
-7. Non-Functional Requirements
+4. Service Design
+5. Component Architecture
+6. Security Architecture
+7. Infrastructure Requirements
+8. Non-Functional Requirements
 
 ## 1. Executive Summary
 
@@ -20,7 +21,7 @@ The traditional model for customers wanting to integrate with our WMS offerings 
 
 This document presents the solution architecture for WMS iHub (Integration Hub), a proposed new capability within the WMS Suite that will cater to the business/technical requirements.
 
-## 3. Requirements Summary
+## 2. Requirements Summary
 Business Requirements
 * Self-service tool accessible by customer's staff
 * UI console driven administration and configuration
@@ -37,7 +38,7 @@ Technical Requirements
 * HTTP(s) Protocol support
 * Cost Efficient
 
-## 4. High-Level Solution Design
+## 3. High-Level Solution Design
 
 iHub will be a stand-alone application consisting of a set of services that will satisfy the business/technical requirements laid out above. 
 
@@ -47,12 +48,60 @@ iHub will be a stand-alone application consisting of a set of services that will
 * iHub will call WMS APIs with the transformed data, collect responses and send it back to the ERP system with appropriate status.
 * iHUb will log all execution activity to enable customers to monitor and act upon integration outcomes i.e. success/failures.
 
+  A pictorial description of the high-level solution context is presented below.
+
 ![Vijay Nair's landscape - Context Diagram (Latest) (1)](https://github.com/practicalvj/sadexercise/assets/122186968/b14849f4-f783-4dfe-a5c4-cbd62fbd9b12)
+
+## 4. Service Design
+
+The iHub application consists of 4 main services
+
+* iHub Studio Service -> Provides the capability to define and deploy integrations as metadata 
+* iHub Runtime Service -> Provides the capability to execute the integrations
+* iHub Metadata Cache -> Provides the capability to store integration metadata as a cache
+* iHub Reporting Service -> Provides the capability to monitor/observe and report on integration executions.
+
+A pictorial description of the service design is depicted below.
 
 ![image](https://github.com/practicalvj/sadexercise/assets/122186968/033301b1-222e-4ea7-8939-fd5d8d570bb5)
 
+**_iHub Studio Service_**
 
+* The Studio Service provides the core metamodel for the integration platform. The metadata consists of a set of entities that enable the definition of integration services. These entities include - Channels, Routes and Transformation (see component architecture below for more details).
+* The metadata is modeled based on Apache Camel's DSL - an enterprise grade integration framework.
+* Customers utilize the Studio service console as a canvas to define the metadata as per their requirements. They will also be able to version and activate integrations.
+* The Service consists of UI and Backend services
 
+| Choice of Technology    | Layer | Reasoning |
+| -------- | ------- | -------- |
+| React | Front End| Enterprise Standard |
+| Spring Boot | Backend | Enterprise Standard |
+| Postgres | Datastore | Enterprise Standard |
+| Apache Camel | Metadata Model  | Provides a complete model for defining enterprise integration patterns. Open source based on a permissive license enabling us to rollout this capability with lower costs. Alternatives investigated included Spring Integration which was based on an XML based DSL that resulted in it not being chosen.|
+
+**_iHub Metadata Cache_**
+
+* The Metadata cache serves as an in-memory representation of the meta data.
+* As customers define and deploy integrations, the cache will be reflected to update the latest versions.
+  
+| Choice of Technology    | Layer | Reasoning |
+| -------- | ------- | -------- |
+| Redis | Cache | Enterprise Standard |
+  
+
+**_iHub Runtime Service_**
+
+* The Metadata cache serves as an in-memory representation of the meta data.
+* As customers define and deploy integrations, the cache will be reflected to update the latest versions.
+  
+| Choice of Technology    | Layer | Reasoning |
+| -------- | ------- | -------- |
+| React | Front End| Enterprise Standard |
+| Spring Boot | Backend | Enterprise Standard |
+| Postgres | Datastore | Enterprise Standard |
+| Apache Camel | Metadata Model  | Provides a complete model for defining enterprise integration patterns. Open source based on a permissive license enabling us to rollout this capability with lower costs. Alternatives investigated included Spring Integration which was based on an XML based DSL that resulted in it not being chosen.|
+
+**_iHub Reporting Service_**
 
 ## 5. Component Architecture
 
@@ -61,7 +110,7 @@ iHub will be a stand-alone application consisting of a set of services that will
 - Outline security measures, compliance standards, and data protection mechanisms.
 
 ## 7. Infrastructure Requirements
-- Specify the infrastructure needed, both hardware and software, including network and server architecture.
+
 
 ## 8. Non-Functional Requirements
 
@@ -74,5 +123,5 @@ iHub will be a stand-alone application consisting of a set of services that will
 | Resiliency | In the event of an outage of dependent solution components, has service resiliency been built in to avoid revenue or customer facing impact? | 
 | Visibility & Control | Have operational measurements been established against which proper operations of the solution can be measured; are procedures in place for alerts and correction? |
 
-## 9. Risks and Mitigations
+## 10. Risks and Mitigations
 - Identify potential risks and propose mitigation strategies.
