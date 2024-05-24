@@ -78,6 +78,8 @@ A pictorial description of the service design is depicted below.
 | Spring Boot | Backend | Enterprise Standard |
 | Postgres | Datastore | Enterprise Standard |
 | Apache Camel | Metadata Model  | Provides a complete model for defining enterprise integration patterns. Open source based on a permissive license enabling us to rollout this capability with lower costs. Alternatives investigated included Spring Integration which was based on an XML based DSL that resulted in it not being chosen.|
+| jslt | Transformation Layer | Json Query and Transformation Language. Required for payload transformation between customer's formats to our formats and compatible with Apache Camel |
+
 
 **_iHub Metadata Cache_**
 
@@ -91,17 +93,26 @@ A pictorial description of the service design is depicted below.
 
 **_iHub Runtime Service_**
 
-* The Metadata cache serves as an in-memory representation of the meta data.
-* As customers define and deploy integrations, the cache will be reflected to update the latest versions.
+* The runtime service acts as the execution engine for the iHub Application
+* As requests come in to satisfy a particular integration request, it loads the corresponding integration model and executes it.
+* During the execution of a specific integration request, it is responsible for ensuring connectivity, transformation and logging of the requests.
   
 | Choice of Technology    | Layer | Reasoning |
 | -------- | ------- | -------- |
-| React | Front End| Enterprise Standard |
 | Spring Boot | Backend | Enterprise Standard |
 | Postgres | Datastore | Enterprise Standard |
-| Apache Camel | Metadata Model  | Provides a complete model for defining enterprise integration patterns. Open source based on a permissive license enabling us to rollout this capability with lower costs. Alternatives investigated included Spring Integration which was based on an XML based DSL that resulted in it not being chosen.|
+| Apache Camel | Metadata Model  | As stated above|
 
 **_iHub Reporting Service_**
+
+* The reporting service provides insights into the execution log of integration requests
+* Utilizing the reporting service, customers can get data about completed/stalled/non-performant executions and action accordingly
+
+| Choice of Technology    | Layer | Reasoning |
+| -------- | ------- | -------- |
+| Spring Boot | Backend | Enterprise Standard |
+| Postgres | Datastore | Enterprise Standard |
+| Apache Camel | Metadata Model  | As stated above|
 
 ## 5. Component Architecture
 
