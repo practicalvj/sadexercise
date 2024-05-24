@@ -39,13 +39,16 @@ Technical Requirements
 
 ## 4. High-Level Solution Design
 
-The high level solution design for iHub is laid out below.
+iHub will be a stand-alone application consisting of a set of services that will satisfy the business/technical requirements laid out above. 
+
+* It will have a browser based console exposed to the customer's administrators to help them setup integrations, deploy and monitor them.
+* From an inbound channel perspective, iHub will expose canonical APIs
 
 ![Vijay Nair's landscape - Context Diagram (Latest) (1)](https://github.com/practicalvj/sadexercise/assets/122186968/b14849f4-f783-4dfe-a5c4-cbd62fbd9b12)
 
 
 
-## 5. Detailed Component Architecture
+## 5. Component Architecture
 
 
 ## 6. Security Architecture
